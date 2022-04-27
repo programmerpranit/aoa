@@ -1,0 +1,1 @@
+{"name":"Local: InsertionSort","url":"c:\\Users\\PRANIT\\DATA\\coding\\cpp\\Exp\\InsertionSort.cpp","tests":[{"id":1651078599234,"input":"5 8 9 3 2","output":"2 3 5 8 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\PRANIT\\DATA\\coding\\cpp\\Exp\\InsertionSort.cpp","group":"local","local":true}
