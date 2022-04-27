@@ -37,9 +37,11 @@ void selectionSort(int arr[], int n){
 
 
 int partition(int arr[], int low, int high){
-    int pivot = arr[high];
-    int i = low-1;
+    int pivot = arr[high]; // get pivot element
+    int i = low-1; // init i with less than low so we can increment it later
 
+
+    // swap all elements are less than pivot to left
     for(int j = low; j<high; j++){
         if(arr[j]< pivot){
             i++;
@@ -47,6 +49,7 @@ int partition(int arr[], int low, int high){
         }
     }
 
+    // swap the pivot element
     swap(arr, i+1, high);
 
     return i++;
@@ -56,9 +59,12 @@ int partition(int arr[], int low, int high){
 void quickSort(int arr[], int low, int high){
     
     if(low<high){
-        int pivot = partition(arr, low, high);
 
+        // get the pivot index
+        int pivot = partition(arr, low, high); 
+        // quick sort for elements less than pivot
         quickSort(arr, low, pivot-1);
+        // quick sort for elements greater than pivot
         quickSort(arr, pivot+1, high);
     }
 
